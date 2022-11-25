@@ -1,0 +1,106 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    padding: 50px 150px;
+}
+main{
+    border: 5px solid var(--bc);
+    background-color: white;
+    /* padding: 20px; */
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    padding: 20px;
+    color: var(--fcolor);
+}
+
+input[type="text"]{
+    outline: none;
+    height: 41px;
+    padding: 5px;
+    font-size: 31px;
+}
+button{
+    height: 41px;
+    font-size: 31px;
+}
+.s{
+    padding: 21px 11px;
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 51px;
+}
+.theme{
+    width: 450px;
+    height: 90px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: white;
+    border-bottom-left-radius: 41px;
+    border-bottom-right-radius: 41px;
+}
+input[type="radio"]{
+    appearance: none;
+    height: 31px;
+    width: 31px;
+    border-radius: 51%;
+    background-color: white;
+    cursor: pointer;
+}
+input[type="radio"]:checked{
+    background-color: var(--rcolor);
+}
+:root:has(#gray:checked){
+    --rcolor:rgb(221, 218, 218);
+    --fcolor:black;
+    --bc:gray
+}
+:root:has(#pink:checked){
+    --rcolor:rgb(228, 180, 188);
+    --fcolor:rgb(242, 117, 138);
+    --bc:rgb(114, 113, 113);
+}
+:root:has(#blue:checked){
+    --rcolor:rgb(172, 172, 255);
+    --fcolor:rgb(3, 3, 156);
+    --bc:rgb(110, 109, 109);
+}
+:root:has(#green:checked){
+    --rcolor:rgb(102, 216, 102);
+    --fcolor:rgb(3, 76, 3);
+    --bc:rgb(123, 104, 104);
+}
+:root:has(#black:checked){
+    --rcolor:rgb(37, 36, 36);
+    --fcolor:rgb(24, 24, 57);
+    --bc:rgb(159, 146, 146);
+}
+#gray{
+    border: 4px solid gray;
+}
+#pink{
+    border: 4px solid pink;
+}
+#blue{
+    border: 4px solid blue;
+}
+#green{
+    border: 4px solid green;
+}
+#black{
+    border: 4px solid black;
+}
+ body{
+    background-color: var(--rcolor);
+ }
